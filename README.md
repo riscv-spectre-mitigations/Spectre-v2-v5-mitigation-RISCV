@@ -14,7 +14,6 @@ Steps:
 
 6. Use make all to obtain the executables or make run to also run them on the simulator.
 
-7. In order to activate the retpoline mitigation, add RETPOLINE=1 as a make parameter.
+7. In order to activate the retpoline mitigation, add RETPOLINE=1 as a make parameter(for Spectre v5, the mitigation will be applied for the vulnerable function frameDump).
 
 In this repo, in the src folder, there are 3 sources ended in "Defense". These are the sources that don't need an updated compiler, they reflect the mitigation in the inline asm code.
-
